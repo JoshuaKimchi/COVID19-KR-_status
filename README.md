@@ -1,11 +1,11 @@
 # 코로나19 한국 감염통계 CSV추출(시/도별, 일별, 전체 포함)
-# Corona19 Korea Infection Statistics CSV Extraction (including city/province, daily and total)
+# COVID19 Korea Infection Statistics to CSV(including city/province, daily and total)
 
 ## 코로나19의 한국내 감염 데이터를 CSV형태로 만들어주는 파이썬 스크립트입니다. 목적에 맞도록 대충 짰습니다. 잘 굴러가긴 합니다. Python 3버전용입니다.
 ## This is small Python script that makes Corona 19's infection data in Korea in CSV format. It's a rough plan for the purpose. It's for Python 3.
 
 ### 1. 먼저 공공데이터 포털에 가입하여 하기 API Key를 받아주세요.
-### 1. Please sign up for the public data portal and receive the API key below.(site is in Korean)
+### 1. Please sign up for the PublicDataPortal(the Korean government site for public data) and receive the API key below.(site is in Korean)
 ### https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043378
 
 ### 2. 소스의 11번째줄의 MY APK KEY에 받은 키를 넣어주세요
