@@ -8,8 +8,8 @@
 ### 1. Please sign up for the PublicDataPortal(the Korean government site for public data) and receive the API key below.(site is in Korean)
 ### https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043378
 
-### 2. 소스의 11번째줄의 MY APK KEY에 받은 키를 넣어주세요
-### 2. write your key on the MY APK KEY in the 11th row of the source file.
+### 2. 소스의 11번째줄의 MY API KEY에 받은 키를 넣어주세요
+### 2. write your key on the MY API KEY in the 11th row of the source file.
 
 ### 3. 실행하면 처음 데이터는 3월 3일부터 현재까지의 데이터를 한번에 받아오기 시작합니다.
 ### 3. When you run the script, the data will begin to be received at once from March 3rd to the present day.
