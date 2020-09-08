@@ -2,7 +2,7 @@
 # COVID19 Korea Infection Statistics to CSV(including city/province, daily and total)
 
 ## 코로나19의 한국내 감염 데이터를 CSV형태로 만들어주는 파이썬 스크립트입니다. 목적에 맞도록 대충 짰습니다. 잘 굴러가긴 합니다. Python 3버전용입니다.
-## This is small Python script that makes Corona 19's infection data in Korea in CSV format. It's a rough plan for the purpose. It's for Python 3.
+## This is small Python script that makes COVID19 infection data in Korea in CSV format. It's a rough plan for the purpose. for Python 3.
 
 ### 1. 먼저 공공데이터 포털에 가입하여 하기 API Key를 받아주세요.
 ### 1. Please sign up for the PublicDataPortal(the Korean government site for public data) and receive the API key below.(site is in Korean)
@@ -11,15 +11,16 @@
 ### 2. 소스의 11번째줄의 MY API KEY에 받은 키를 넣어주세요
 ### 2. write your key on the MY API KEY in the 11th row of the source file.
 
-### 3. 실행하면 처음 데이터는 3월 3일부터 현재까지의 데이터를 한번에 받아오기 시작합니다.
-### 3. When you run the script, the data will begin to be received at once from March 3rd to the present day.
+### 3. 실행하면 처음 데이터는 3월 3일(가장 최초 데이터입니다)부터 현재까지의 데이터를 한번에 받아오기 시작합니다.
+### 3. When you run the script, it will automatically gather data from March 3rd(the first data) to the present day.
 
 ### 4. 만들어진 covid19kr.txt를 엑셀로 열어서 다듬어서 쓰시면 됩니다.
 ### 4. Open the covid19kr.txt with excel and enjoy.
 
-공공데이터 포털 매뉴얼을 보시면 아래처럼 다른 데이터도 뽑을 수 있으니. 참고하셔요. 대신 대소문자가 안맞는 경우가 많아서, 하나 대충 호출하셔서 XML파일을 보시고 명확하게 지정하시는 것이 좋습니다.
+공공데이터 포털 매뉴얼을 보시면 아래처럼 다른 데이터도 뽑을 수 있으니. 참고하셔요. 대신 대소문자가 안맞는 경우가 많아서, 아래 호출결과데이터 참고하셔서 추가하시면 됩니다.
 당장 확진자 누적수인 defCnt가 매뉴얼에는 DEF_CNT로 되어있습니다.
 
+#### 공공데이터 포털 매뉴얼
 ```docx
   resultCode	결과코드	2	1	00	결과코드
   resultMsg	결과메세지	50	1	NORMAL SERVICE	결과메시지
@@ -42,7 +43,8 @@
   OVER_FLOW_CNT	해외유입 수	15	1	14	해외유입 수
   LOCAL_OCC_CNT	지역발생 수 	15	1	7	지역발생 수 
 ```
-호출 결과 데이터입니다. 참고하세요
+
+#### 호출 결과 데이터입니다. 참고하세요
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <response>
